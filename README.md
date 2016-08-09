@@ -1,10 +1,17 @@
 # react-native-datepicker
 react-native datePicker component both of iOS and Android
 
+## Install
+
+`npm insatll reactNativeDatepicker --save`
 
 ## usage
 ```js
+
+import DatePicker from 'reactNativeDatepicker'
+
 const DateText = (<View><Text style={styles.buttonText}>{moment(this.state.date).format('YYYY') }</Text><Text style={[styles.buttonText, styles.buttonMonText]}>{moment(this.state.date).format('MM') }月</Text></View>)
+...
 
 <DatePicker
   style={{width: 250}}
@@ -21,6 +28,7 @@ const DateText = (<View><Text style={styles.buttonText}>{moment(this.state.date)
   }}
   onDateChange={(date) => {this.setState({date: date})}}
 />
+...
 ```
 ## Properties
 
